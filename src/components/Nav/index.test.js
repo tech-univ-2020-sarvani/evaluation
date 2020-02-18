@@ -4,7 +4,7 @@ import Nav from './index';
 
 describe('the Nav component', () => {
   it('should render correctly', () => {
-    const { asFragment } = render(<Nav testId="test-btn" />);
+    const { asFragment } = render(<Nav testId="test-nav" />);
 
     expect(asFragment()).toMatchSnapshot();
   });
