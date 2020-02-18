@@ -8,8 +8,9 @@ import {
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import HomePage from './containers/HomePage';
-import Genres from './containers/Genres';
+// import Genres from './containers/Genres';
 import Songs from './containers/Songs';
+import Genres from './containers/Genres';
 
 function App(props) {
   const { testId } = props;
@@ -17,14 +18,14 @@ function App(props) {
     <div data-testId={testId}>
       <Router>
         <Switch>
-          <Route path="/">
-            <HomePage />
-          </Route>
           <Route path="/genres">
             <Genres />
           </Route>
-          <Route path="/genres/:type">
+          <Route path="/songs">
             <Songs />
+          </Route>
+          <Route path="/">
+            <HomePage />
           </Route>
         </Switch>
       </Router>
