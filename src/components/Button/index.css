@@ -1,0 +1,16 @@
+.button {
+    background-color: rgb(93, 201, 59);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 2px;
+    cursor: pointer;
+    width: 250px;
+    font-family: 'Poppins';
+    border-radius: 50px;
+  }
+  
