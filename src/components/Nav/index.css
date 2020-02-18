@@ -1,0 +1,11 @@
+.NavBar {
+    background-color: rgb(93, 201, 59);
+    display: flex;
+    height: 4rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Poppins';
+    color: white;
+    font-size:xx-large;
+}
