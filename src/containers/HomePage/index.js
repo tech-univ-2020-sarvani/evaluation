@@ -14,7 +14,7 @@ function HomePage(props) {
         <p>:((</p>
         <br />
         <h3>seems a bit empty in here..</h3>
-        <Button>sync</Button>
+        <Button path="/genres">sync</Button>
       </div>
     </div>
   );
