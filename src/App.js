@@ -1,26 +1,37 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import PropTypes from 'prop-types';
+import HomePage from './containers/HomePage';
+import Genres from './containers/Genres';
+import Songs from './containers/Songs';
 
-function App() {
+function App(props) {
+  const { testId } = props;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div data-testId={testId}>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <HomePage />
+          </Route>
+          <Route path="/genres">
+            <Genres />
+          </Route>
+          <Route path="/genres/:type">
+            <Songs />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
-
+App.propTypes = {
+  testId: PropTypes.string,
+};
 export default App;
