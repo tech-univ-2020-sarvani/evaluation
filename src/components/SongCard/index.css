@@ -1,0 +1,14 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(241, 239, 239, 0.2);
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: rgb(228, 224, 224);
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  img{
+      border-radius: 50%;
+  }
